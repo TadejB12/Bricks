@@ -281,7 +281,7 @@ function drawIt() {
           [1, 0, 1, 1, 0, 0, 0, 1, 1, 0],  // Tentacle 
         ];
 
-
+        maxTocke = 0;
         NROWS = pattern.length;
         NCOLS = pattern[0].length;
         BRICKHEIGHT = 30;
