@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.swal-footer{
+    justify-content: center;
+    display: flex;
+}
+
+#hidden{
+    width: 5px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 333px;
+    top: 38px;
+}
+
+body {
+    background: url(../slike/pirate_cove.png) no-repeat center center;
+    background-size: cover;
+    font-family: 'Pirata One', cursive;
+    color: #f4e2c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+}
+
+/* Top scoreboard */
+#scoreboard {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Play area */
+#play {
+    padding: 10px;
+}
+
+/* Controls section */
+#controls {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Pirata One', cursive;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #f4e2c4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.button:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d; 
+    cursor: unset;
+    opacity: 0.7; 
+}
+
+/* Select box */
+#difficulty {
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Pirata One', cursive;
+    border-radius: 8px;
+    background-color: #3498db; 
+    color: #f4e2c4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#difficulty:hover {
+    background-color: #2980b9; 
+}
+
+/* Canvas */
+#canvas {
+    display: block;
+    background: url(../slike/ocean.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 25px; 
+    overflow: hidden; 
+}
+
+
+.title {
+    font-family: 'Pirata One', cursive; 
+    font-size: 64px;
+    color: #f4e2c4; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 4px;
+    text-align: center;
+    animation: wave 4s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 48px;
+    }
+
+    #canvas {
+        width: 90vw;
+        height: auto;
+    }
+
+    .button, #difficulty {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #scoreboard {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    #controls {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .button, #difficulty {
+        width: 45%; 
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #canvas {
+        width: 95vw;
+        height: auto;
+    }
+
+    #scoreboard {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+

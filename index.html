@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bricks</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" type="x-icon" href="slike/volcano.png">-->
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body onload="drawIt()">
+
+    <div id="hidden" onclick="vizitka()"></div>
+    <div class="title">
+        <p>Cannon Clash</p>
+    </div>
+    <div id="scoreboard">
+        Time: <span id="cas">00:00</span>  
+        Score: <span id="tocke">0</span>  
+        Best: <span id="bestScore">0</span>
+    </div>
+    <div id="play">
+        <canvas id="canvas" width="800" height="700"></canvas>
+    </div>
+    
+    <div id="controls">
+        <button class="button" id="btnStart">Start</button>
+        <button class="button" id="btnPause">Pause</button>
+        <button class="button" id="btnEnd">End</button>
+        <button class="button" id="btnReset">Reset Best Score</button>
+        
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    
+    
+    
+
+    <script src = "https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src = "js/bricks.js"></script>
+</body>
+</html>
