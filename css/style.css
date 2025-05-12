@@ -12,8 +12,9 @@
     height: 25px;
     cursor: pointer;
     position: absolute;
-    left: 333px;
+    left: 303px;
     top: 38px;
+    background:black;
 }
 
 body {
