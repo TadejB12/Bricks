@@ -12,8 +12,9 @@
     height: 25px;
     cursor: pointer;
     position: absolute;
-    left: 333px;
-    top: 38px;
+    left: 20vw;
+    top: 8vh;
+    background: black;
 }
 
 body {
