@@ -8,12 +8,13 @@
 }
 
 #hidden{
-    width: 5px;
+    width: 8px;
     height: 25px;
     cursor: pointer;
     position: absolute;
     left: 17.5vw;
     top: 4vh;
+    background:black;
 }
 
 body {
